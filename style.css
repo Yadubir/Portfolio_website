@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: #f57272; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vw;
+    border-bottom: 2px solid #000000;
+}
+.nav2{
+    display: flex;
+    gap: 2vw;
+}
+.nav h2{
+    font-weight: 600;
+    font-size: 2.3vw;
+}
+.nav2 h4{
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+.nav2 i{
+    font-size: 1.6vw;
+    font-weight: 800;
+    display: none;
+}
+.content{
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+}
+.content1{
+    height: 100%;
+    width: 50%;
+    /* background-color: #fb8181; */
+    padding: 6vw 4vw;
+}
+.content2{
+    height: 100%;
+    width: 50%;
+    background-color: #81a6fb;
+}
+.content1 h1{
+    font-size: 3vw;
+    font-weight: 700;
+    margin: 0 1.2vw;
+}
+.content1 p{
+    font-size: 2vw;
+    font-weight: 500;
+    margin: 2vh 1.2vw;
+}
+.content1 button{
+    height: 6vh;
+    width: 11vw;
+    background-color: #4ab485;
+    color: rgb(248, 248, 238);
+    margin: 2vw 3vh;
+    border: none;
+    border-radius: 5px;
+}
+.content1 span{
+    color: #4ab485;
+    font-weight:900;
+}
+.content2 img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .nav{
+        padding: 0 6vw;
+        height: 65px;
+    }
+    .nav h2{
+        font-size: 4vw;
+        font-weight: 800;
+    }
+    .nav2 h4{
+        font-size: 2.6vw;
+        font-weight: 800;
+        display: none;
+    }
+    .nav2 i{
+        display: block;
+        font-size: 3.7vw;
+        font-weight: 900;
+        margin-right: 2vw;
+    }
+    .content{
+        height: calc(100% - 65px);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content1{
+        width: 100%;
+    }
+    .content1 h1{
+        font-size: 5vw;
+    }
+    .content2{
+        width: 100%;
+    }
+    .content1 p{
+        font-size: 2.6vw;
+    }
+    .content1 button{
+        height: 35px;
+        width: 70px;
+        border-radius: 10px;
+    }
+
+}
